@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/QbHttp">
+        <file>data/base.tpl</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,3 @@
+module Qb.Http
+plugin QbHttp
+typeinfo QbHttp.qmltypes
