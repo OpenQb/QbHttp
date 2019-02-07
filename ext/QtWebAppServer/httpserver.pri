@@ -2,7 +2,7 @@ INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
 QT += network
-
+DEFINES+=DECLSPEC=
 # Enable very detailed debug messages when compiling the debug version
 CONFIG(debug, debug|release) {
     DEFINES += SUPERVERBOSE
