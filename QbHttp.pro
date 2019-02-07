@@ -31,12 +31,10 @@ qmltypes.commands = qmlplugindump -nonrelocatable Qb.Http 1.0 > $$PWD/QbHttp.qml
 QMAKE_EXTRA_TARGETS += qmltypes
 
 qmldir.files = qmldir QbHttp.qmltypes
-unix {
-    installPath = $$[QT_INSTALL_QML]/$$replace(uri, \\., /)
-    qmldir.path = $$installPath
-    target.path = $$installPath
-    INSTALLS += target qmldir
-}
+installPath = $$[QT_INSTALL_QML]/$$replace(uri, \\., /)
+qmldir.path = $$installPath
+target.path = $$installPath
+INSTALLS += target qmldir
 
 HEADERS += \
     qbhttp_plugin.h
