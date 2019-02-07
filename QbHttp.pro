@@ -3,6 +3,7 @@ TARGET = QbHttp
 QT += qml quick core
 
 CONFIG += plugin c++11
+CONFIG -= android_install
 
 INCLUDEPATH += $$PWD
 
